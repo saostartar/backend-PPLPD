@@ -1,0 +1,288 @@
+###
+// get semua admin
+GET http://localhost:5000/program/11
+Content-Type: application/json
+
+###
+// get byid admin
+GET http://localhost:5000/admin/629d51ea-54be-4d56-a072-a32a3fff04c3
+Content-Type: application/json
+
+###
+// hapus admin
+DELETE  http://localhost:5000/program/7
+Content-Type: application/json
+
+
+###
+//Membuat admin
+POST http://localhost:5000/admin
+Content-Type: application/json
+
+{
+    "nama": "Grace",
+    "no_hp": "083909282",
+    "username": "admi",
+    "password" : "123456",
+    "confPassword" : "123456"
+}
+
+### 
+//Membuat admin
+GET http://localhost:5000/admin/search/Uria
+Content-Type: application/json
+
+
+###
+//update admin
+PATCH http://localhost:5000/admin/a781de69-04f2-4914-b933-1e43cc0eff20
+Content-Type: application/json
+
+{
+    "nama": "Ayuu Cantik",
+    "no_hp": "083111111",
+    "username": "admin9",
+    "password" : "123456",
+    "confPassword" : "123456",
+    "role" : "Admin"
+
+}
+
+###
+//get semua cabor
+GET http://localhost:5000/cabor
+Content-Type: application/json
+
+###
+//buatcabor
+POST http://localhost:5000/cabor
+Content-Type: application/json
+
+{
+    "namaCabor": "Gwent Labada",
+    "kodeCabor": "19"
+}
+
+###
+//hapus cabor
+DELETE http://localhost:5000/cabor/10
+Content-Type: application/json
+
+###
+//Login User admin
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "admin2",
+    "password" : "123456"
+}
+
+### 
+//Login User atlet
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "1112001",
+    "password" : "nama depan11001"
+}
+###
+// Me
+GET http://localhost:5000/me
+
+###
+// Logout users
+DELETE http://localhost:5000/logout
+
+
+###
+// Get atlet
+GET  http://localhost:5000/komponen/cabor/21
+Content-Type: application/json
+
+###
+// Get atlet
+GET  http://localhost:5000/indikator/cabor/21
+Content-Type: application/json
+
+###
+// Get atlet
+GET http://localhost:5000/latihan/3
+Content-Type: application/json
+
+
+###
+//Buat latihan
+POST http://localhost:5000/latihan
+Content-Type: application/json
+
+    {
+        "id_komponen" : "144",
+        "namaLatihan" : "Latihan1",
+        "id_cabor" : "11"
+    }
+
+
+###
+//Buat berita
+POST http://localhost:5000/berita
+Content-Type: application/json
+
+    {
+        "judul" : "Perlengkapan untuk hari ini",
+        "isiBerita" : "Kalian manusia laknat jangan malas keode"
+    }
+
+###
+// Get komponen
+POST http://localhost:5000/komponen
+Content-Type: application/json
+
+    {
+        "id_komponen" : "117",
+        "namaKomponen" : "KKai",
+        "id_cabor" : "11"
+    }
+
+###
+// Buat indikator
+POST http://localhost:5000/indikator
+Content-Type: application/json
+
+    {
+        "namaIndikator" : "Lari",
+        "id_komponen" : "117"
+    }
+
+###
+// Get cabor
+GET http://localhost:5000/indikator/cabor/12
+Content-Type: application/json
+
+###
+// Get atlet by cabor
+GET http://localhost:5000/cabor/atlet/11
+Content-Type: application/json
+
+###
+// Get atlet
+GET http://localhost:5000/atlet
+Content-Type: application/json
+
+
+###
+// Get panduan
+GET http://localhost:5000/panduan
+Content-Type: application/json
+
+###
+// Get gambar by atlet
+GET http://localhost:5000/gambar/atlet/12003
+Content-Type: application/json
+
+
+###
+// Hapus Panduan
+DELETE  http://localhost:5000/panduan/6
+Content-Type: application/json
+
+
+###
+// Hapus Atlet
+DELETE  http://localhost:5000/atlet/d1de5ccd-f604-426e-8be9-c4c5b94af9f6
+Content-Type: application/json
+
+
+###
+//membuat atlet
+POST http://localhost:5000/atlet
+Content-Type: application/json
+
+{
+    "image" : "uria"
+
+}
+###
+//membuat atlet
+POST http://localhost:5000/gambar
+Content-Type: application/json
+
+{
+    
+    "name_awal" : "haha", 
+    "id_cabor" : "11", 
+    "tahun_daftar" : "2019",
+    "nama_tengah" : "hay", 
+    "nama_akhir" : "hay", 
+    
+    "nama_panggil" : "hay",
+    "tgl_lahir" : "29 juni 2004", 
+    "tmp_lahir" : "todahe", 
+    "agama" : "kristen", 
+    "nama_jalan" : "wisma manggis", 
+    "desa": "balisoan", 
+    "kelurahan": "nanana", 
+    "kecamatan": "sahu", 
+    "kota": "halbar", 
+    "provinsi": "malut", 
+    "no_telp": "0822", 
+    "hp_mobile": "8909", 
+    "email": "balisoan01@gmail.com", 
+    "kelamin": "laki",
+    "gol_darah": "o", 
+    "tinggi_badan": "178",
+    "berat_badan": "45",
+    "pendidikan" : "aa",
+    "nama_sklh" : "a",
+    "pend_terakhir" : "c",
+    "alumni" : "c",
+    "tahun_lulus" : "cc",
+    "ukuran_baju" : "c",
+    "ukuran_sepatu" : "1",
+    "nama_ayah" : "1",
+    "tmpLahir_ayah" : "1",
+    "tglLahir_ayah" : "1",
+    "agama_ayah" : "1",
+    "pekerjaan_ayah" : "1",
+    "noHp_ayah" : "1",
+    "notlp_ayah" : "1",
+    "email_ayah" : "1",
+    "nama_ibu" : "1",
+    "tmpLahir_ibu" : "1",
+    "tglLahir_ibu" : "1",
+    "agama_ibu" : "1",
+    "pekerjaan_ibu" : "1",
+    "noHp_ibu" : "1",
+    "notlp_ibu" : "1",
+    "email_ibu" : "1",
+    "provinsi_ortu" : "1",
+    "kota_ortu" : "1",
+    "kecamatan_ortu" : "1",
+    "kelurahan_ortu" : "1",
+    "desa_ortu" : "1",
+    "namaJalan_ortu" : "1",
+    "nama_wali" : "1",
+    "hubkeluarga_wali" : "1",
+    "tempLahir_wali" : "1",
+    "tglLahir_wali" : "1",
+    "agama_wali" : "1",
+    "jeniskelamin_wali" : "1",
+    "pekerjaan_wali" : "1",
+    "noHp_wali" : "1",
+    "notlp_wali" : "1",
+    "email_wali" : "1",
+    "provinsi_wali" : "1",
+    "kota_wali" : "1",
+    "kecamatan_wali" : "1",
+    "kelurahan_wali" : "1",
+    "desa_wali" : "1",
+    "namaJalan_wali" : "1",
+    "nama_club" : "1",
+    "nama_event" : "1",
+    "tahun_prestasi" : "1",
+    "capai_prestasi" : "1",
+
+     
+    "password": "123456"
+}

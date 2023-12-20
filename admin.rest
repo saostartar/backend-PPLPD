@@ -1,0 +1,62 @@
+// Get Super
+GET http://localhost:5000/panduan
+Content-Type: application/json
+
+
+###
+//Buat Super
+POST http://localhost:5000/super
+Content-Type: application/json
+
+    {
+        "nama" : "super",
+        "username" : "superadmin",
+        "password" : "123456",
+        "confPassword" : "123456"
+    }
+
+
+###
+//Buat Super
+POST http://localhost:5000/forum
+Content-Type: application/json
+
+    {
+        "namaForum" : "Forum 4"
+    }
+
+###
+//Buat Super
+GET  http://localhost:5000/forum/5
+Content-Type: application/json
+
+
+###
+//Buat Super
+DELETE http://localhost:5000/forum/4
+Content-Type: application/json
+
+###
+//Buat Super
+GET http://localhost:5000/perkembangan/atlet/2111002
+Content-Type: application/json
+
+###
+//get get
+GET http://localhost:5000/komponen/periode/12/2023-11
+Content-Type: application/json
+
+###
+//get get
+GET http://localhost:5000/perkembangan/2023-11-15/2111002
+Content-Type: application/json
+
+###
+//Login User admin
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "admin2",
+    "password" : "123456"
+}
